@@ -1,0 +1,17 @@
+### Miscellaneous
+.DS_Store
+Thumbs.db
+
+### Composer
+composer.lock
+
+### IDE
+.idea/
+
+### Application
+.env.local.php
+.env.production.php
+config/environment.php
+vendor/
+htdocs/cms
+htdocs/content/uploads
