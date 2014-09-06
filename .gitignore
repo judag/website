@@ -17,3 +17,5 @@ vendor/
 htdocs/cms
 htdocs/content/uploads
 htdocs/content/upgrade
+.sass-cache
+node_modules

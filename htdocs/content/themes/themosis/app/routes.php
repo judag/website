@@ -8,8 +8,8 @@
  * http://codex.wordpress.org/Conditional_Tags
  *
  */
-Route::get('home', function(){
+Route::get('front', function(){
 
-    return View::make('welcome');
+    return View::make('pages.home');
 
 });
