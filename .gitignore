@@ -16,3 +16,4 @@ config/shared.php
 vendor/
 htdocs/cms
 htdocs/content/uploads
+htdocs/content/upgrade
