@@ -1,5 +1,10 @@
 <?php
 
-/**
- * application.php - Write your custom code below.
- */
+/*-----------------------------------------------------------------------------------------*/
+// Assets
+/*-----------------------------------------------------------------------------------------*/
+// CSS
+Asset::add('th-screen', 'css/screen.css', array(), '1.0.0', 'all');
+
+//JS
+Asset::add('th-modernizr', 'js/vendor/modernizr.min.js', array(), '2.6.2');

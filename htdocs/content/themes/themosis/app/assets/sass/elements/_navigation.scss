@@ -1,0 +1,20 @@
+.nav__main{
+  list-style: none;
+  padding: 1.125em 0;
+
+  li{
+    display: inline;
+    margin-left: 1.875em;
+
+    a, a:link, a:visited, a:active{
+      color: $lighter-grey;
+      text-decoration: none;
+      @include single-transition(color, 0.2s, ease-out);
+      font-weight: 500;
+    }
+
+    a:hover{
+      color: $light-green;
+    }
+  }
+}

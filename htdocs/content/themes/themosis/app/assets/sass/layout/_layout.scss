@@ -1,0 +1,15 @@
+@import "reset";
+
+.wrapper{
+  width: $wrapper-width;
+  margin: 0 auto;
+  padding: 0 1.25em;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}

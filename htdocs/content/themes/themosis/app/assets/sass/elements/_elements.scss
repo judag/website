@@ -1,0 +1,15 @@
+p{
+  @include franklin;
+  @include font-size(16);
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+a, a:link, a:active, a:visited, a:hover{
+  @include franklin;
+  @include font-size(16);
+  font-weight: 300;
+  line-height: 100%;
+}
+
+@import "navigation";
