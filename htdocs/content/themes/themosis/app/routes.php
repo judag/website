@@ -13,3 +13,9 @@ Route::get('front', function(){
     return View::make('pages.home');
 
 });
+
+Route::get('page', function(){
+
+    return View::make('pages.docs');
+
+});

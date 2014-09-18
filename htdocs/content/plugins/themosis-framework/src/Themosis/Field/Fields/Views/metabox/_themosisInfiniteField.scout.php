@@ -32,7 +32,7 @@
                             $f['name'] = $field['name'].'['.$i.']['.$f['name'].']';
 
                             // Render the field.
-                            echo(View::make('_themosisMetaboxRow', array('field' => $f))->render());
+                            echo(Themosis\Facades\View::make('_themosisMetaboxRow', array('field' => $f))->render());
 
                             // Reset Id, name and value.
                             $f['id'] = $defaultId;
