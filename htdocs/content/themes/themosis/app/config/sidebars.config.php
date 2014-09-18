@@ -9,13 +9,13 @@ return array(
 	*/
 	array(
 
-		'name'			=> __('First sidebar', THEMOSIS_THEME_TEXTDOMAIN),
-		'id'			=> 'first-sidebar',
-		'description'	=> __('Area of first sidebar', THEMOSIS_THEME_TEXTDOMAIN),
-		'before_widget'	=> '<div>',
+		'name'			=> __('Documentation sidebar', THEMOSIS_THEME_TEXTDOMAIN),
+		'id'			=> 'docs-sidebar',
+		'description'	=> __('Area of documentation sidebar', THEMOSIS_THEME_TEXTDOMAIN),
+		'before_widget'	=> '<div class="sidebar__widget">',
 		'after_widget'	=> '</div>',
-		'before_title'	=> '<h2>',
-		'after_title'	=> '</h2>'
+		'before_title'	=> '<h3>',
+		'after_title'	=> '</h3>'
 
 	)
 

@@ -22,6 +22,12 @@
         <div class="sidebar col-25 left">
             <div>
                 <h2>Documentation</h2>
+                <?php
+                    if (function_exists('dynamic_sidebar'))
+                    {
+                        dynamic_sidebar('docs-sidebar');
+                    }
+                ?>
             </div>
         </div>
         <!-- End sidebar -->

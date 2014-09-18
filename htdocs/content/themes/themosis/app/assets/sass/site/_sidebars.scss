@@ -1,0 +1,49 @@
+.sidebar{
+  padding-top: 3.125em;
+
+  div{
+    h2{
+      padding-left: 1em;
+      margin-bottom: 1.66em;
+    }
+
+    a, a:link, a:active, a:visited{
+      font-weight: 500;
+      color: $grey;
+      text-decoration: none;
+    }
+
+    a:hover{
+      color: $light-green;
+    }
+  }
+}
+.sidebar__widget{
+  h3{
+    padding: 0 0 0.5em 1.5em;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 1em;
+  }
+
+  div{
+    padding-left: 1.875em;
+
+    ul{
+      margin-bottom: 3.125em;
+
+      li{
+        margin-bottom: 1em;
+      }
+
+      li:last-of-type{
+        margin-bottom: 0;
+      }
+
+      .current-menu-item{
+        a, a:link, a:active, a:visited, a:hover{
+          color: $light-green;
+        }
+      }
+    }
+  }
+}

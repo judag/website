@@ -9,5 +9,6 @@ return array(
      *
      */
     'PostModel' => themosis_path('app').'models'.DS.'PostModel.php',
+    'PageModel' => themosis_path('app').'models'.DS.'PageModel.php'
 
 );

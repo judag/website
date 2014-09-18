@@ -13,6 +13,8 @@
   @include background-image(linear-gradient($light-green, $light-blue));
   @include filter-gradient($light-green, $light-blue);
   @include single-text-shadow(0, 1px, 0px, false, darken($light-green, 10%));
+  cursor: pointer;
+  outline: none;
 }
 
 .primary-button:hover{
@@ -20,4 +22,10 @@
   @include background(linear-gradient(darken($light-green, 2%), darken($light-blue, 2%)));
   @include background-image(linear-gradient(darken($light-green, 2%), darken($light-blue, 2%)));
   @include filter-gradient(darken($light-green, 2%), darken($light-blue, 2%));
+}
+
+.secondary-button, .secondary-button:link, .secondary-button:active, .secondary-button:visited{
+  @extend .primary-button;
+  @include font-size(22);
+  padding: 0.2em 1em 0.3em;
 }

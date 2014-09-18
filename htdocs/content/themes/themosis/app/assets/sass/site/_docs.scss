@@ -5,7 +5,7 @@
     padding: 3.125em;
 
     h1{
-      border-bottom: 1px solid #dadada;
+      border-bottom: 1px solid $border-color;
       padding-bottom: 0.42em;
       margin-bottom: 0.75em;
     }
@@ -16,12 +16,76 @@
       margin-top: 1.2em;
     }
 
+    h3, h4{
+      @include franklin;
+      @include font-size(20);
+      color: $green;
+      margin-bottom: 1.5em;
+    }
+
+    h5{
+      @include franklin;
+      @include font-size(16);
+      color: $green;
+      font-weight: 500;
+      margin-bottom: 0.625em;
+    }
+
     p{
       margin-bottom: 1.875em;
+
+      code{
+        background-color: $lighter-grey;
+        border: 1px solid darken($lighter-grey, 5%);
+        padding: 0 2px;
+        @include border-radius(3px, 3px);
+        color: $grey;
+      }
     }
 
     strong{
       font-weight: 500;
+    }
+
+    ol{
+      list-style: decimal;
+      margin-left: 1.375em;
+
+      li{
+        margin-bottom: 1em;
+        @include franklin;
+        @include font-size(16);
+        color: $grey;
+        font-weight: 300;
+      }
+    }
+    
+    ul{
+      margin-bottom: 1.66em;
+
+      li{
+        background: url("../images/bullet.png") 0 7px no-repeat;
+        margin-bottom: 1em;
+        @include franklin;
+        @include font-size(16);
+        color: $grey;
+        font-weight: 300;
+        padding-left: 1.125em;
+        line-height: 1.5em;
+
+        code{
+          font-weight: 500;
+        }
+
+        ul{
+          margin-top: 1.375em;
+        }
+      }
+    }
+
+    blockquote{
+      border-left: 3px solid $border-color;
+      padding-left: 1em;
     }
 
     a, a:link, a:active, a:visited{

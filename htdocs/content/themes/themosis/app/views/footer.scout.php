@@ -6,13 +6,13 @@
             </a>
         </div>
         <nav class="right">
-            <ul class="nav__main">
-                <li><a href="#">Get started</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Studio</a></li>
-            </ul>
+            <?php
+                wp_nav_menu(array(
+                    'theme_location'    => 'footer-nav',
+                    'container'         => false,
+                    'menu_class'        => 'nav__main'
+                ));
+            ?>
         </nav>
     </div>
 </footer>

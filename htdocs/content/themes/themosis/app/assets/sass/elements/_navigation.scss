@@ -17,4 +17,10 @@
       color: $light-green;
     }
   }
+
+  .current-menu-item{
+    a, a:link, a:active, a:visited, a:hover{
+      color: $light-green;
+    }
+  }
 }
