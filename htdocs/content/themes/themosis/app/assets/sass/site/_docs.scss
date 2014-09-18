@@ -1,0 +1,36 @@
+.docs{
+  background-color: $white;
+
+  div{
+    padding: 3.125em;
+
+    h1{
+      border-bottom: 1px solid #dadada;
+      padding-bottom: 0.42em;
+      margin-bottom: 0.75em;
+    }
+
+    h2{
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+      margin-top: 1.2em;
+    }
+
+    p{
+      margin-bottom: 1.875em;
+    }
+
+    strong{
+      font-weight: 500;
+    }
+
+    a, a:link, a:active, a:visited{
+      color: $light-green;
+      text-decoration: none;
+    }
+
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}

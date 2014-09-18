@@ -1,3 +1,7 @@
+body{
+  background-color: $lighter-grey;
+}
+
 p{
   @include franklin;
   @include font-size(16);

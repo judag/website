@@ -4,9 +4,9 @@
 
 <div>
     <div class="wrapper clearfix">
-        <div class="col-75 left">
+        <div class="docs col-75 left">
             @loop
-                <div class="docs">
+                <div>
                     <?php
                         if (class_exists('\Michelf\MarkdownExtra'))
                         {
@@ -19,8 +19,8 @@
             @endloop
         </div>
         <!-- Sidebar -->
-        <div class="col-25 left">
-            <div class="sidebar">
+        <div class="sidebar col-25 left">
+            <div>
                 <h2>Documentation</h2>
             </div>
         </div>
