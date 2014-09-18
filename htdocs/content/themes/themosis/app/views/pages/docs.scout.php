@@ -8,10 +8,13 @@
             @loop
                 <div class="docs">
                     <?php
-                        $html = \Michelf\MarkdownExtra::defaultTransform(get_the_content());
-                        $output = str_replace('<pre>', '<pre class="prettyprint">', $html);
+                        if (class_exists('\Michelf\MarkdownExtra'))
+                        {
+                            $html = \Michelf\MarkdownExtra::defaultTransform(get_the_content());
+                            $output = str_replace('<pre>', '<pre class="prettyprint">', $html);
+                            echo($output);
+                        }
                     ?>
-                    {{ $output }}
                 </div>
             @endloop
         </div>
