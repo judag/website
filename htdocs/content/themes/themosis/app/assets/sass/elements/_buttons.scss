@@ -1,0 +1,23 @@
+.primary-button, .primary-button:link, .primary-button:active{
+  display: inline-block;
+  @include franklin;
+  @include font-size(28);
+  color: $white;
+  font-weight: 300;
+  @include border-radius(2px, 2px);
+  padding: 0.5em 1.32em;
+  border: 1px solid $light-green;
+  text-decoration: none;
+  background: $light-green;
+  @include background(linear-gradient($light-green, $light-blue));
+  @include background-image(linear-gradient($light-green, $light-blue));
+  @include filter-gradient($light-green, $light-blue);
+  @include single-text-shadow(0, 1px, 0px, false, darken($light-green, 10%));
+}
+
+.primary-button:hover{
+  background: darken($light-green, 2%);
+  @include background(linear-gradient(darken($light-green, 2%), darken($light-blue, 2%)));
+  @include background-image(linear-gradient(darken($light-green, 2%), darken($light-blue, 2%)));
+  @include filter-gradient(darken($light-green, 2%), darken($light-blue, 2%));
+}

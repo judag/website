@@ -3,6 +3,7 @@ p{
   @include font-size(16);
   font-weight: 300;
   line-height: 1.5em;
+  color:$grey;
 }
 
 a, a:link, a:active, a:visited, a:hover{
@@ -12,4 +13,23 @@ a, a:link, a:active, a:visited, a:hover{
   line-height: 100%;
 }
 
+h1{
+  @include franklin;
+  @include font-size(48);
+  font-weight: 500;
+  color: $green;
+  line-height: 100%;
+}
+
+h2{
+  @extend h1;
+  @include font-size(30);
+}
+
+h3{
+  @extend h1;
+  @include font-size(20);
+}
+
 @import "navigation";
+@import "buttons";
