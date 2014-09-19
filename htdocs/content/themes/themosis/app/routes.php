@@ -16,6 +16,12 @@ Route::get('front', function(){
 
 Route::get('page', function(){
 
+    // Prettify
+    Asset::add('th-prettify', 'https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js', array(), '1.0');
+
+    // Sticky sidebar
+    Asset::add('th-sticky', 'js/sticky.js', array('jquery'), '1.0', true);
+
     return View::make('pages.docs');
 
 });
