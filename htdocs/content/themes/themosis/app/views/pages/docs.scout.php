@@ -4,7 +4,7 @@
 
 <div>
     <div class="wrapper clearfix">
-        <div class="docs col-75 left">
+        <article class="docs col-75 left">
             @loop
                 <div>
                     <?php
@@ -17,9 +17,9 @@
                     ?>
                 </div>
             @endloop
-        </div>
+        </article>
         <!-- Sidebar -->
-        <div class="sidebar col-25 left">
+        <aside class="sidebar col-25 left">
             <div>
                 <h2>Documentation</h2>
                 <?php
@@ -29,7 +29,7 @@
                     }
                 ?>
             </div>
-        </div>
+        </aside>
         <!-- End sidebar -->
     </div>
 </div>
