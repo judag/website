@@ -1,12 +1,13 @@
 pre.prettyprint {
   display: block;
-  background-color: #005366;
-  border: 1px solid #005366 !important;
+  background-color: $dark-green;
+  border: 1px solid $dark-green !important;
   @include border-radius(4px, 4px);
   padding: 0.875em !important;
-  @include franklin;
+  font-family: "source-code-pro", 'Lucida Console', monospace;
   line-height: 1.5em;
   margin-bottom: 1.875em;
+  @include font-size(12);
 }
 pre .nocode { background-color: none; color: #000 }
 pre .str { color: #f2cd00; font-weight: 300; } /* string  - yellow */

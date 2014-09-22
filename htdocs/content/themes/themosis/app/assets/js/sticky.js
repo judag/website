@@ -19,13 +19,14 @@
                 {
                     top = max - elemHeight;
                 }
-
-                elem.css('marginTop', top);
             }
             else
             {
-                elem.css('marginTop', 0);
+               top = 0;
             }
+
+            elem.css('marginTop', top);
+
         };
 
     // Check if the element exists in the DOM.
