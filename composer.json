@@ -44,8 +44,8 @@
 		"php": ">=5.3.3",
 		"wordpress/wordpress": "4.0",
 		"fancyguy/webroot-installer": "1.1.0",
-        "themosis/framework": "0.9.*",
-        "themosis/theme": "0.9.*",
+        "themosis/framework": "1.0.*",
+        "themosis/theme": "1.0.*",
         "michelf/php-markdown": "1.4.1"
     },
     "extra":{
