@@ -1,0 +1,20 @@
+body.temp{
+  background-color: $dark-green;
+}
+
+.cheetin{
+  width: 100%;
+  padding: 10em 0;
+  text-align: center;
+
+  p{
+    background-color: $light-green;
+    padding: 0.5em 1.2em;
+    @include franklin;
+    @include font-size(22);
+    color: #ffffff;
+    margin: 0 auto;
+    display: inline-block;
+    @include border-radius(4px, 4px);
+  }
+}

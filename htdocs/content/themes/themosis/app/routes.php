@@ -10,11 +10,25 @@
  */
 Route::get('front', function(){
 
+    $launch = Option::get('th-options', 'launch');
+
+    if ('on' == $launch)
+    {
+        return View::make('pages.temp');
+    }
+
     return View::make('pages.home');
 
 });
 
 Route::get('page', function(){
+
+    $launch = Option::get('th-options', 'launch');
+
+    if ('on' == $launch)
+    {
+        return View::make('pages.temp');
+    }
 
     // Prettify
     Asset::add('th-prettify', 'https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js', array(), '1.0');

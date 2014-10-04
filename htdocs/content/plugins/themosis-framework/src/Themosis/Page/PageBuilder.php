@@ -383,12 +383,14 @@ class PageBuilder extends Wrapper {
     /**
      * Validate the defined settings.
      *
-     * @param array $values
+     * @param mixed $values
      * @return array
      */
-    public function validateSettings(array $values)
+    public function validateSettings($values)
     {
         if(!isset($this->datas['rules']) || !is_array($this->datas['rules'])) return $values;
+
+        if(is_null($values)) return array();
 
         $sanitized = array();
 
