@@ -19,3 +19,4 @@ htdocs/content/uploads
 htdocs/content/upgrade
 .sass-cache
 node_modules
+htdocs/content/plugins/wp-migrate-db-pro
