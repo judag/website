@@ -5,6 +5,7 @@
   @include filter-gradient(#003541, #00495a);
   max-height: 775px;
   overflow-y: hidden;
+  min-width: $min-width;
 
   .wrapper{
     padding-top: 5em;
@@ -30,6 +31,7 @@
 
 #features{
   padding: 4em 0;
+  min-width: $min-width;
 
   .wrapper{
     text-align: center;
@@ -68,6 +70,7 @@
 
 #social{
   border-top: 1px solid $border-color;
+  min-width: $min-width;
 }
 
 #social__items{

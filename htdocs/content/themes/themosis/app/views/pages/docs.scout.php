@@ -2,7 +2,7 @@
 
 @section('main')
 
-<div>
+<div class="docs-wrapper">
     <div class="wrapper clearfix">
         <article class="docs col-75 left">
             @loop
